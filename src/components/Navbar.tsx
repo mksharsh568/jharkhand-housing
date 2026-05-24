@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
@@ -28,17 +29,26 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-6">
+
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-          <div className="w-9 h-9 bg-orange-600 rounded-lg flex items-center justify-center">
-            <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white">
-              <path d="M3 9.5L12 3l9 6.5V21H15v-6H9v6H3V9.5z" />
-            </svg>
+        <Link href="/" className="flex items-center gap-3 flex-shrink-0">
+          <div className="w-10 h-10 bg-black rounded-xl overflow-hidden flex items-center justify-center">
+            <Image
+              src="/logo.svg"
+              alt="OAO Property Dekho"
+              width={40}
+              height={40}
+              className="object-contain"
+            />
           </div>
           <div className="leading-tight">
-            <span className="font-extrabold text-gray-900 text-lg tracking-tight">JH</span>
-            <span className="font-extrabold text-orange-600 text-lg tracking-tight">Homes</span>
-            <div className="text-[9px] text-gray-400 font-medium -mt-1 tracking-widest uppercase">Jharkhand</div>
+            <div className="flex items-baseline gap-1">
+              <span className="font-extrabold text-gray-900 text-xl tracking-tight">OAO</span>
+              <span className="font-bold text-orange-600 text-sm">Property Dekho</span>
+            </div>
+            <div className="text-[9px] text-gray-400 font-medium -mt-0.5 tracking-wide">
+              OAOprop Infrastructure Pvt. Ltd.
+            </div>
           </div>
         </Link>
 
@@ -74,9 +84,9 @@ export default function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span className={`block w-6 h-0.5 bg-gray-700 transition-transform ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-gray-700 transition-opacity ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-gray-700 transition-transform ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span className={`block w-6 h-0.5 bg-gray-700 transition-transform duration-200 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`block w-6 h-0.5 bg-gray-700 transition-opacity duration-200 ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-6 h-0.5 bg-gray-700 transition-transform duration-200 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 

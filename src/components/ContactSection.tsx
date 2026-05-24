@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function ContactSection() {
   const [form, setForm] = useState({ name: "", phone: "", district: "", message: "" });
@@ -30,16 +31,27 @@ export default function ContactSection() {
               Walk in or reach out — we&apos;re happy to help you find your dream property.
             </p>
 
-            {/* Office card */}
-            <div className="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 text-white font-extrabold text-lg">
-                  AT
+            {/* Office card with logo */}
+            <div className="bg-black rounded-2xl p-6 mb-6 flex items-center gap-5">
+              <div className="w-20 h-20 flex-shrink-0">
+                <Image
+                  src="/logo.svg"
+                  alt="OAO Property Dekho"
+                  width={80}
+                  height={80}
+                  className="object-contain"
+                />
+              </div>
+              <div>
+                <div className="flex items-baseline gap-2 mb-0.5">
+                  <span className="font-extrabold text-white text-2xl">OAO</span>
+                  <span className="font-bold text-orange-500 text-base">Property Dekho</span>
                 </div>
-                <div>
-                  <h3 className="font-extrabold text-gray-900 text-lg">Ajit Tiwary</h3>
-                  <p className="text-orange-600 font-semibold text-sm">Founder &amp; Property Consultant</p>
-                  <p className="text-gray-500 text-xs mt-1">15+ Years in Jharkhand Real Estate</p>
+                <p className="text-gray-400 text-xs">OAOprop Infrastructure Pvt. Ltd.</p>
+                <div className="mt-2 pt-2 border-t border-white/10">
+                  <p className="text-white font-semibold text-sm">Ajit Tiwary</p>
+                  <p className="text-orange-400 text-xs">Founder &amp; Property Consultant</p>
+                  <p className="text-gray-500 text-xs mt-0.5">15+ Years in Jharkhand Real Estate</p>
                 </div>
               </div>
             </div>
@@ -57,9 +69,7 @@ export default function ContactSection() {
                   <div className="text-sm font-semibold text-gray-800 mt-0.5">
                     Ajit Tiwary, Hariom Tower
                   </div>
-                  <div className="text-sm text-gray-600">
-                    Ranchi, Jharkhand – 834001
-                  </div>
+                  <div className="text-sm text-gray-600">Ranchi, Jharkhand – 834001</div>
                 </div>
               </div>
 
@@ -85,8 +95,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Email</div>
-                  <a href="mailto:ajit@jhhomes.in" className="text-sm font-semibold text-orange-600 hover:underline mt-0.5 block">
-                    ajit@jhhomes.in
+                  <a href="mailto:info@oaoprop.in" className="text-sm font-semibold text-orange-600 hover:underline mt-0.5 block">
+                    info@oaoprop.in
                   </a>
                 </div>
               </div>
@@ -112,10 +122,7 @@ export default function ContactSection() {
               </h4>
               <div className="flex flex-wrap gap-2">
                 {["Ranchi", "Dhanbad", "Bokaro", "Hazaribag", "Deoghar", "Ramgarh"].map((d) => (
-                  <span
-                    key={d}
-                    className="text-xs font-semibold bg-white border border-gray-200 text-gray-700 px-3 py-1.5 rounded-full"
-                  >
+                  <span key={d} className="text-xs font-semibold bg-white border border-gray-200 text-gray-700 px-3 py-1.5 rounded-full">
                     📍 {d}
                   </span>
                 ))}
@@ -134,15 +141,13 @@ export default function ContactSection() {
 
             {sent && (
               <div className="mb-4 bg-green-50 border border-green-200 text-green-700 text-sm font-semibold px-4 py-3 rounded-xl flex items-center gap-2">
-                ✓ Enquiry sent! Ajit Tiwary will contact you shortly.
+                ✓ Enquiry sent! OAO team will contact you shortly.
               </div>
             )}
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-xs font-semibold text-gray-600 mb-1.5">
-                  Full Name *
-                </label>
+                <label className="block text-xs font-semibold text-gray-600 mb-1.5">Full Name *</label>
                 <input
                   required
                   type="text"
@@ -154,9 +159,7 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-gray-600 mb-1.5">
-                  Phone / WhatsApp *
-                </label>
+                <label className="block text-xs font-semibold text-gray-600 mb-1.5">Phone / WhatsApp *</label>
                 <input
                   required
                   type="tel"
@@ -168,9 +171,7 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-gray-600 mb-1.5">
-                  District of Interest
-                </label>
+                <label className="block text-xs font-semibold text-gray-600 mb-1.5">District of Interest</label>
                 <select
                   value={form.district}
                   onChange={(e) => setForm({ ...form, district: e.target.value })}
@@ -188,9 +189,7 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-gray-600 mb-1.5">
-                  Message / Requirement
-                </label>
+                <label className="block text-xs font-semibold text-gray-600 mb-1.5">Message / Requirement</label>
                 <textarea
                   rows={4}
                   value={form.message}
@@ -204,7 +203,7 @@ export default function ContactSection() {
                 type="submit"
                 className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3.5 rounded-xl text-sm transition-colors"
               >
-                Send Enquiry to Ajit Tiwary
+                Send Enquiry to OAO Property Dekho
               </button>
 
               <p className="text-xs text-gray-400 text-center">

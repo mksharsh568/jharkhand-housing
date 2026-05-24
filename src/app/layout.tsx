@@ -5,11 +5,11 @@ import "./globals.css";
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "JH Homes – Real Estate in Jharkhand | Ranchi, Dhanbad, Bokaro & More",
+  title: "OAO Property Dekho – Real Estate in Jharkhand | OAOprop Infrastructure Pvt. Ltd.",
   description:
-    "Jharkhand's most trusted real estate platform. Buy, sell & rent properties across Ranchi, Dhanbad, Bokaro, Hazaribag, Ramgarh and Deoghar. Contact Ajit Tiwary at Hariom Tower, Ranchi.",
+    "OAO Property Dekho – Jharkhand's most trusted real estate platform by OAOprop Infrastructure Pvt. Ltd. Buy, sell & rent properties across Ranchi, Dhanbad, Bokaro, Hazaribag, Ramgarh and Deoghar.",
   keywords:
-    "real estate Jharkhand, property Ranchi, flats Dhanbad, house Bokaro, property Hazaribag, land Deoghar, home Ramgarh",
+    "OAO Property Dekho, OAOprop, real estate Jharkhand, property Ranchi, flats Dhanbad, house Bokaro, property Hazaribag, land Deoghar, home Ramgarh",
 };
 
 export default function RootLayout({

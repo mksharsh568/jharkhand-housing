@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const footerLinks = {
   "Buy Property": [
     "Flats in Ranchi",
@@ -24,7 +26,7 @@ const footerLinks = {
     "New Launch 2025",
   ],
   Company: [
-    "About JH Homes",
+    "About OAO",
     "Careers",
     "Post Free Property",
     "Advertise with Us",
@@ -49,6 +51,7 @@ const popularSearches = [
 export default function Footer() {
   return (
     <footer className="bg-gray-950 text-gray-300">
+
       {/* Top CTA */}
       <div className="bg-orange-600 py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
@@ -80,20 +83,31 @@ export default function Footer() {
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-12 pb-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8 pb-10 border-b border-white/10">
+
           {/* Brand col */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 bg-orange-600 rounded-lg flex items-center justify-center">
-                <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white">
-                  <path d="M3 9.5L12 3l9 6.5V21H15v-6H9v6H3V9.5z" />
-                </svg>
+            {/* Logo */}
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 bg-black rounded-xl overflow-hidden flex items-center justify-center border border-white/10">
+                <Image
+                  src="/logo.svg"
+                  alt="OAO Property Dekho"
+                  width={48}
+                  height={48}
+                  className="object-contain"
+                />
               </div>
               <div className="leading-tight">
-                <span className="font-extrabold text-white text-lg">JH</span>
-                <span className="font-extrabold text-orange-400 text-lg">Homes</span>
-                <div className="text-[9px] text-gray-500 -mt-0.5 uppercase tracking-widest">Jharkhand</div>
+                <div className="flex items-baseline gap-1">
+                  <span className="font-extrabold text-white text-xl tracking-tight">OAO</span>
+                  <span className="font-bold text-orange-400 text-sm">Property Dekho</span>
+                </div>
+                <div className="text-[9px] text-gray-500 mt-0.5 tracking-wide">
+                  OAOprop Infrastructure Pvt. Ltd.
+                </div>
               </div>
             </div>
+
             <p className="text-sm text-gray-400 leading-relaxed mb-5 max-w-xs">
               Jharkhand&apos;s most trusted real estate platform. Serving Ranchi, Dhanbad, Bokaro,
               Hazaribag, Deoghar &amp; Ramgarh since 2010.
@@ -124,7 +138,7 @@ export default function Footer() {
                   key={s.label}
                   href="#"
                   aria-label={s.label}
-                  className="w-9 h-9 rounded-lg bg-white/8 border border-white/10 flex items-center justify-center text-xs font-bold text-gray-400 hover:bg-orange-600 hover:text-white hover:border-orange-600 transition-all"
+                  className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-xs font-bold text-gray-400 hover:bg-orange-600 hover:text-white hover:border-orange-600 transition-all"
                 >
                   {s.icon}
                 </a>
@@ -141,10 +155,7 @@ export default function Footer() {
               <ul className="space-y-2.5">
                 {links.map((l) => (
                   <li key={l}>
-                    <a
-                      href="#"
-                      className="text-sm text-gray-400 hover:text-white transition-colors"
-                    >
+                    <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
                       {l}
                     </a>
                   </li>
@@ -174,7 +185,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
-          <p>© 2025 JH Homes – Ajit Tiwary, Hariom Tower, Ranchi, Jharkhand. All rights reserved.</p>
+          <p>© 2025 OAOprop Infrastructure Pvt. Ltd. – Ajit Tiwary, Hariom Tower, Ranchi, Jharkhand.</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
