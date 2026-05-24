@@ -71,7 +71,7 @@ export default function Footer() {
               Post Property Free
             </a>
             <a
-              href="tel:+919876543210"
+              href="tel:+919334168597"
               className="border-2 border-white/50 text-white font-semibold px-6 py-3 rounded-xl text-sm hover:bg-white/10 transition-colors"
             >
               📞 Call Now
@@ -119,10 +119,14 @@ export default function Footer() {
                 📍 Main Office
               </div>
               <div className="text-sm font-semibold text-white">Ajit Tiwary</div>
-              <div className="text-sm text-gray-400">Hariom Tower, Ranchi</div>
-              <div className="text-sm text-gray-400">Jharkhand – 834001</div>
-              <a href="tel:+919876543210" className="text-sm text-orange-400 font-semibold mt-1 block hover:underline">
-                +91 98765 43210
+              <div className="text-sm text-gray-400">Hari Om Tower, 2nd Floor, Room No. 210</div>
+              <div className="text-sm text-gray-400">Circular Road, Lalpur, Ranchi</div>
+              <div className="text-sm text-gray-400">Jharkhand</div>
+              <a href="tel:+919334168597" className="text-sm text-orange-400 font-semibold mt-1 block hover:underline">
+                +91 93341 68597
+              </a>
+              <a href="tel:+919162813888" className="text-sm text-orange-400 font-semibold hover:underline">
+                +91 91628 13888
               </a>
             </div>
 
@@ -185,7 +189,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
-          <p>© 2025 OAOprop Infrastructure Pvt. Ltd. – Ajit Tiwary, Hariom Tower, Ranchi, Jharkhand.</p>
+          <p>© 2025 OAOprop Infrastructure Pvt. Ltd. – Hari Om Tower, 2nd Floor, Room 210, Circular Road, Lalpur, Ranchi, Jharkhand.</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

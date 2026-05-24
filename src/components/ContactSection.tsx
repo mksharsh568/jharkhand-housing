@@ -67,9 +67,10 @@ export default function ContactSection() {
                 <div>
                   <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Office Address</div>
                   <div className="text-sm font-semibold text-gray-800 mt-0.5">
-                    Ajit Tiwary, Hariom Tower
+                    Hari Om Tower, 2nd Floor, Room No. 210
                   </div>
-                  <div className="text-sm text-gray-600">Ranchi, Jharkhand – 834001</div>
+                  <div className="text-sm text-gray-600">Circular Road, Lalpur</div>
+                  <div className="text-sm text-gray-600">Ranchi, Jharkhand</div>
                 </div>
               </div>
 
@@ -81,8 +82,11 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Phone / WhatsApp</div>
-                  <a href="tel:+919876543210" className="text-sm font-semibold text-orange-600 hover:underline mt-0.5 block">
-                    +91 98765 43210
+                  <a href="tel:+919334168597" className="text-sm font-semibold text-orange-600 hover:underline mt-0.5 block">
+                    +91 93341 68597
+                  </a>
+                  <a href="tel:+919162813888" className="text-sm font-semibold text-orange-600 hover:underline mt-0.5 block">
+                    +91 91628 13888
                   </a>
                 </div>
               </div>
