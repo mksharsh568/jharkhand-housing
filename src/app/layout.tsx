@@ -10,6 +10,11 @@ export const metadata: Metadata = {
     "OAO Property Dekho – Jharkhand's most trusted real estate platform by OAOprop Infrastructure Pvt. Ltd. Buy, sell & rent properties across Ranchi, Dhanbad, Bokaro, Hazaribag, Ramgarh and Deoghar.",
   keywords:
     "OAO Property Dekho, OAOprop, real estate Jharkhand, property Ranchi, flats Dhanbad, house Bokaro, property Hazaribag, land Deoghar, home Ramgarh",
+  icons: {
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
+  },
 };
 
 export default function RootLayout({
