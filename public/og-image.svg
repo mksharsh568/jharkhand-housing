@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" width="520" height="300">
+  <!-- Black background -->
+  <rect width="520" height="300" fill="#111111" rx="20"/>
+
+  <!-- Left O (orange thick ring) -->
+  <circle cx="90" cy="130" r="70" fill="none" stroke="#FF4500" stroke-width="26"/>
+
+  <!-- Right O (orange thick ring) -->
+  <circle cx="430" cy="130" r="70" fill="none" stroke="#FF4500" stroke-width="26"/>
+
+  <!-- A — left diagonal leg -->
+  <polygon points="260,28  318,220  292,220  260,88" fill="white"/>
+  <!-- A — right diagonal leg -->
+  <polygon points="260,28  202,220  228,220  260,88" fill="white"/>
+  <!-- A — crossbar -->
+  <rect x="210" y="158" width="100" height="24" rx="3" fill="white"/>
+
+  <!-- PROPERTY DEKHO -->
+  <text x="260" y="258"
+    text-anchor="middle"
+    font-family="Arial Black,Arial,sans-serif"
+    font-weight="900"
+    font-size="32"
+    fill="white"
+    letter-spacing="6">PROPERTY DEKHO</text>
+
+  <!-- Company name -->
+  <text x="260" y="285"
+    text-anchor="middle"
+    font-family="Arial,sans-serif"
+    font-size="11"
+    fill="#777777"
+    letter-spacing="1">OAOprop Infrastructure Pvt. Ltd.</text>
+</svg>
